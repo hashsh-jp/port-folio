@@ -11,19 +11,34 @@ export function TechSection() {
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const skills = [
-    { name: "Next.js", icon: "Code" },
-    { name: "React", icon: "Code2" },
-    { name: "TypeScript", icon: "Braces" },
-    { name: "Supabase", icon: "Database" },
-    { name: "PostgreSQL", icon: "Database" },
-    { name: "Redis", icon: "Database" },
-    { name: "Stripe", icon: "CreditCard" },
-    { name: "Docker", icon: "Box" },
-    { name: "Cloudflare R2", icon: "Cloud" },
-    { name: "OpenAI", icon: "Brain" },
-    { name: "Git", icon: "GitBranch" },
-    { name: "TailwindCSS", icon: "Palette" },
-  ] as const
+  // TypeScript / React / Next.js / Express
+  { name: "TypeScript", icon: "Braces" },
+  { name: "React", icon: "Code2" },
+  { name: "Next.js (App Router)", icon: "Code" },
+  { name: "Express", icon: "Server" },
+
+  // Dart / Flutter
+  { name: "Dart", icon: "Code" },
+  { name: "Flutter", icon: "Smartphone" },
+
+  // Supabase / Firebase / Cloudflare
+  { name: "Supabase", icon: "Database" },
+  { name: "Firebase", icon: "Flame" },
+  { name: "Cloudflare", icon: "Cloud" },
+
+  // AWS / GCP / Redis / Stripe / Git
+  { name: "AWS", icon: "Cloud" },
+  { name: "GCP", icon: "Cloud" },
+  { name: "Redis", icon: "Database" },
+  { name: "Stripe", icon: "CreditCard" },
+  { name: "Git", icon: "GitBranch" },
+
+  // UI / CSS / AI
+  { name: "shadcn/ui", icon: "Layout" },
+  { name: "TailwindCSS", icon: "Palette" },
+  { name: "LLM", icon: "Brain" },
+  { name: "VectorStore", icon: "Library" },
+] as const
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },

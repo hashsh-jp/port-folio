@@ -89,6 +89,7 @@ export function AboutSection() {
               </motion.span>
               を一貫してプロダクト全体を設計・推進するよう努めます。
               <br className="hidden md:block" />
+              </motion.p>
               <motion.span
                 className="relative inline-block mt-2"
                 whileHover={{ color: "#3b82f6" }}
@@ -103,7 +104,6 @@ export function AboutSection() {
                   transition={{ duration: 0.3 }}
                 ></motion.div>
               </motion.span>
-            </motion.p>
           </div>
 
           <motion.div variants={containerVariants} className="flex flex-wrap gap-2 mt-8 pl-4">

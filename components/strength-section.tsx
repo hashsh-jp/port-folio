@@ -45,7 +45,7 @@ export function StrengthSection() {
       title: "技術とビジネスの中継地点",
       description: "開発と事業サイドをつなぐ'通訳'としての役割。要件の言語化、仕様設計、工数見積もりから進行管理まで。",
       achievements: [
-        "社内向け業務システム（納期・予算通りにリリース、業務時間を週5時間削減）",
+        "専門用語の使用を回避した状態で企画側との打ち合わせなどが得意です。",
         "ベンチャー向け受託開発案件（短納期でもスムーズな合意形成と開発を両立）",
       ],
     },
@@ -53,13 +53,17 @@ export function StrengthSection() {
       icon: <Bot className="h-8 w-8 text-blue-500" />,
       title: "AIを'現場'で使える実装力",
       description: "単なる試作ではない、'実運用'を見据えたAI統合の実績",
-      achievements: ["Vector StoreによるRAG検索システムの実装", "OpenAI APIを活用した実用的なアプリケーション開発"],
+      achievements: [
+        "Vector StoreによるRAG検索システムの実装",
+        "Function Callを活用したデータのAIチャックを入れた一括処理"
+      ],
     },
     {
       icon: <Cog className="h-8 w-8 text-blue-500" />,
       title: "横断的なモダンスタック構築経験",
       description: "クラウドネイティブな構成を自在に操るフルスタックエンジニア",
       achievements: [
+        "AIを用いた開発・実装",
         "Supabase（PostgreSQL / Edge Functions）",
         "Redis（セッション管理・高速キャッシュ層）",
         "Cloudflare R2",
@@ -68,10 +72,11 @@ export function StrengthSection() {
     {
       icon: <Users className="h-8 w-8 text-blue-500" />,
       title: "技術教育・チームビルディングの実績",
-      description: "若手育成にも注力、未来のエンジニアを育てるプロ",
+      description: "東大生インターンを２社で育成",
       achievements: [
-        "大学生エンジニア3名を指導、うち2名は大手IT企業へ内定",
-        "単なる技術指導ではなく、チームで成果を出す力も育成",
+        "未経験大学生からこれまでに10名以上を自走できる状態へ",
+        "従来の今まで自分が受けたエンジニア教育フロー+「AIでの問題解決」を強化",
+        "単なる技術指導ではなく、仕事として働きやすいエンジニアを育てる意識が大きいです。",
       ],
     },
   ]
