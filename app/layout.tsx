@@ -11,8 +11,8 @@ const noto_sans_jp = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: '橋本 和也 ポートフォリオ',
-  description: '橋本 和也のポートフォリオサイトです。',
+  title: 'Kazuya Hashimoto / About Me',
+  description: `Kazuya Hashimoto's portfolio site`,
 };
 
 export default function RootLayout({

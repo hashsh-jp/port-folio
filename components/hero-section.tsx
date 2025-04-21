@@ -36,7 +36,7 @@ export function HeroSection() {
                 <h1
                   className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight transform transition-all duration-700 hover:text-blue-600"
                 >
-                  橋本 和也
+                  Kazuya Hashimoto
                 </h1>
               </div>
               

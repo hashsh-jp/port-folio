@@ -104,7 +104,7 @@ export function ContactSection() {
 
         <motion.div variants={itemVariants} className="text-sm text-gray-500 relative">
           <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-blue-300 to-transparent"></div>
-          © 2024 橋本 和也. All rights reserved.
+          © 2025 Kazuya Hashimoto. All rights reserved.
         </motion.div>
       </motion.div>
     </section>
