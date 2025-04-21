@@ -4,6 +4,30 @@ import { useEffect, useState } from "react"
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
 
+  // 上部 useState の下に追加
+  const birthDate = new Date(2000, 0, 10) // 月は0-indexed（0 = 1月）
+  const startDate = new Date(2019, 9, 1) // 9 = 10月
+
+  const getAge = () => {
+    const today = new Date()
+    let age = today.getFullYear() - birthDate.getFullYear()
+    const m = today.getMonth() - birthDate.getMonth()
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--
+    }
+    return age
+  }
+
+  const getExperience = () => {
+    const today = new Date()
+    const diff = today.getTime() - startDate.getTime()
+    const years = diff / (1000 * 60 * 60 * 24 * 365.25)
+    // 0.5年単位で四捨五入
+    const roundedYears = Math.round(years * 2) / 2
+    // 年数を「年」「年半」形式で返す
+    return Number.isInteger(roundedYears) ? `${roundedYears}年` : `${Math.floor(roundedYears)}年半`
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY)
@@ -38,6 +62,9 @@ export function HeroSection() {
                 >
                   Kazuya Hashimoto
                 </h1>
+              </div>
+              <div className="text-sm text-gray-500">
+                {getAge()}歳 / エンジニア歴 {getExperience()}年
               </div>
               
               <div className="overflow-hidden">
