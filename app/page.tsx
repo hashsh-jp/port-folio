@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/hero-section" // OK
 import { AboutSection } from "@/components/about-section" // OK
 import { StrengthSection } from "@/components/strength-section" // WIP
 import { TechSection } from "@/components/tech-section"
-import { ProjectSection } from "@/components/project-section"
+// import { ProjectSection } from "@/components/project-section"
 import { CareerSection } from "@/components/career-section"
 import { ContactSection } from "@/components/contact-section"
 import { useEffect } from "react"
@@ -43,7 +43,7 @@ export default function Home() {
         <AboutSection />
         <StrengthSection />
         <TechSection />
-        <ProjectSection />
+        {/* <ProjectSection /> */}
         <CareerSection />
         <ContactSection />
       </main>

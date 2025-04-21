@@ -38,9 +38,17 @@ export function ContactSection() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <motion.h2 variants={itemVariants} className="text-3xl font-bold mb-4">
-          連絡先
-        </motion.h2>
+        <motion.div variants={itemVariants} className="flex flex-col items-center justify-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center relative inline-block">
+          Contact Me
+            <motion.div
+              className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"
+              initial={{ width: "0%" }}
+              animate={isInView ? { width: "100%" } : { width: "0%" }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            ></motion.div>
+          </h2>
+        </motion.div>
 
         <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
           複雑な構成でも、技術・進行・チーム育成まで一人称で推進します。

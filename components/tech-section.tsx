@@ -25,6 +25,15 @@ export function TechSection() {
     { name: "TailwindCSS", icon: "Palette" },
   ] as const
 
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 },
+    },
+  }
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -38,14 +47,17 @@ export function TechSection() {
   return (
     <section id="tech" ref={ref} className="py-20 px-4 md:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <motion.h2
-          className="text-3xl font-bold mb-12 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
-        >
-          直近での使用技術
-        </motion.h2>
+        <motion.div variants={itemVariants} className="flex flex-col items-center justify-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center relative inline-block">
+          Current Tech stack
+            <motion.div
+              className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"
+              initial={{ width: "0%" }}
+              animate={isInView ? { width: "100%" } : { width: "0%" }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            ></motion.div>
+          </h2>
+        </motion.div>
 
         <motion.div
           className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 mb-16"
