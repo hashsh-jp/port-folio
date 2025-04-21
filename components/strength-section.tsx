@@ -54,6 +54,7 @@ export function StrengthSection() {
       title: "AIを'現場'で使える実装力",
       description: "単なる試作ではない、'実運用'を見据えたAI統合の実績",
       achievements: [
+        "AIを活用したトレンドリサーチ→SNSコンテンツ（プロト・台本）生成・編集の自動化",
         "Vector StoreによるRAG検索システムの実装",
         "Function Callを活用したデータのAIチェックを入れた一括処理"
       ],
