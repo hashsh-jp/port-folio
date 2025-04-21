@@ -37,7 +37,7 @@ export function StrengthSection() {
       description: "0→1のプロト開発〜本リリース、ユーザー獲得まで新規事業の要件定義〜運用までを一気通貫で推進します。",
       achievements: [
         "学習塾向け集客用Lineアプリ（2ヶ月で実装、本運用化）",
-        "AIフィルターアプリ（TikTok 200万再生、ユーザー数10万人）",
+        "AIフィルターアプリ（ユーザー数10万人、TikTok 300万再生）",
       ],
     },
     {
@@ -55,7 +55,7 @@ export function StrengthSection() {
       description: "単なる試作ではない、'実運用'を見据えたAI統合の実績",
       achievements: [
         "Vector StoreによるRAG検索システムの実装",
-        "Function Callを活用したデータのAIチャックを入れた一括処理"
+        "Function Callを活用したデータのAIチェックを入れた一括処理"
       ],
     },
     {
@@ -63,10 +63,10 @@ export function StrengthSection() {
       title: "横断的なモダンスタック構築経験",
       description: "クラウドネイティブな構成を自在に操るフルスタックエンジニア",
       achievements: [
+        "AWS・GCPの基本的なサービスの実務経験",
         "AIを用いた開発・実装",
         "Supabase（PostgreSQL / Edge Functions）",
         "Redis（セッション管理・高速キャッシュ層）",
-        "Cloudflare R2",
       ],
     },
     {
