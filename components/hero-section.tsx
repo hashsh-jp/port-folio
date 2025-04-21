@@ -1,9 +1,6 @@
 "use client"
-import { useEffect, useState } from "react"
 
 export function HeroSection() {
-  const [scrollY, setScrollY] = useState(0)
-
   // 上部 useState の下に追加
   const birthDate = new Date(2000, 0, 10) // 月は0-indexed（0 = 1月）
   const startDate = new Date(2019, 9, 1) // 9 = 10月
@@ -27,15 +24,6 @@ export function HeroSection() {
     // 年数を「年」「年半」形式で返す
     return Number.isInteger(roundedYears) ? `${roundedYears}年` : `${Math.floor(roundedYears)}年半`
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   return (
     <section

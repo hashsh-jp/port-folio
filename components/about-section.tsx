@@ -85,7 +85,7 @@ export function AboutSection() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                "要件定義〜運用"
+                &quot;要件定義〜運用&quot;
               </motion.span>
               を一貫してプロダクト全体を設計・推進するよう努めます。
               <br className="hidden md:block" />
