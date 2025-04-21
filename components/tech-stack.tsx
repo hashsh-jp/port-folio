@@ -11,7 +11,7 @@ export function TechStack() {
     ai: false,
     frontend: false,
     backend: false,
-    cloud: false,
+    other: false,
   })
 
   const techCategories = [
@@ -43,6 +43,7 @@ export function TechStack() {
         { tech: "React", years: "3年", level: "★★★", note: "Hooks・状態管理・UI構築" },
         { tech: "Vue.js / Nuxt3", years: "1年", level: "★★", note: "軽量SPA・SSR構成" },
         { tech: "TailwindCSS / HTML / CSS", years: "4年", level: "★★★", note: "UI構築・SP対応含む" },
+        { tech: "Dart / Flutter", years: "0.5年", level: "★☆", note: "クイズアプリなど簡易的なアプリケーション開発" },
       ],
     },
     {
@@ -62,8 +63,8 @@ export function TechStack() {
       ],
     },
     {
-      id: "cloud",
-      name: "クラウドサービス",
+      id: "other",
+      name: "その他の使用技術",
       icon: <Cloud className="w-5 h-5 mr-2" />,
       color: "from-amber-500 to-amber-600",
       bgColor: "bg-amber-500",

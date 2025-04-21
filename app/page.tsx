@@ -2,11 +2,11 @@
 
 import { HeroSection } from "@/components/hero-section" // OK
 import { AboutSection } from "@/components/about-section" // OK
-import { StrengthSection } from "@/components/strength-section" // OK
-import { TechSection } from "@/components/tech-section" // 
+import { StrengthSection } from "@/components/strength-section" // WIP
+import { TechSection } from "@/components/tech-section" // OK
 // import { ProjectSection } from "@/components/project-section"
-import { CareerSection } from "@/components/career-section"
-import { ContactSection } from "@/components/contact-section"
+import { CareerSection } from "@/components/career-section" // OK
+// import { ContactSection } from "@/components/contact-section"
 import { useEffect } from "react"
 import { AnimatePresence } from "framer-motion"
 
@@ -45,7 +45,7 @@ export default function Home() {
         <TechSection />
         {/* <ProjectSection /> */}
         <CareerSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
       </main>
     </AnimatePresence>
   )
