@@ -1,7 +1,7 @@
 export function Timeline() {
   const experiences = [
     {
-      company: "株式会社waotech",
+      company: "教育系事業",
       period: "2024年1月〜現在",
       role: "PM / フルスタックエンジニア",
       description: [
@@ -14,7 +14,7 @@ export function Timeline() {
         "業務効率とユーザー満足度を両立したプロダクトを構築。学生メンバーの育成と受託体制構築にも成功。",
     },
     {
-      company: "株式会社kyo-lab",
+      company: "生成AI系スタートアップ",
       period: "2023年7月〜2023年12月",
       role: "PM / フルスタックエンジニア",
       description: [
@@ -28,7 +28,7 @@ export function Timeline() {
         "AIを活用したSNSコンテンツ生成やトレンド分析など、最先端のAI事業を裁量高く任せて頂きました。",
     },
     {
-      company: "Sansan株式会社",
+      company: "人材系事業会社",
       period: "2023年5月〜2023年6月",
       role: "フロントエンドエンジニア",
       description: [
@@ -39,7 +39,7 @@ export function Timeline() {
       achievements: "業務申請〜通知フローをSlack連携で効率化。業務システムの内製化支援を実現。",
     },
     {
-      company: "株式会社インクレイブ",
+      company: "車の鑑定システム",
       period: "2022年4月〜2023年4月",
       role: "フルスタックエンジニア",
       description: [
@@ -50,7 +50,7 @@ export function Timeline() {
       achievements: "将来的な保守・開発コストの削減とコード共通化に貢献。",
     },
     {
-      company: "株式会社ハルエネ電気・おとく電気",
+      company: "電力事業会社",
       period: "2019年10月〜2022年3月",
       role: "エンジニア / PM代行",
       description: [
